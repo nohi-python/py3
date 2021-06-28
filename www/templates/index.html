@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test users - Awesome Python Webapp</title>
+</head>
+<body>
+    <h1>All users</h1>
+    <a href="/blog">BLOG</a>
+    <a href="/o_index">o_index</a>
+    <a href="/o_users">o_users</a>
+    <h2>日志列表</h2>
+    <a href="/manage/blogs">/manage/blogs</a>
+    {% for u in users %}
+    <p>{{ u.name }} / {{ u.email }}</p>
+    {% endfor %}
+</body>
+</html>
